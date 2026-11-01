@@ -1,0 +1,29 @@
+[project]
+name = "cg-project"
+version = "0.1.0"
+description = "从 0 开始学计算机图形学：博客 → 视频 → 编码三位一体的学习工程"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "manim>=0.22.0,<0.23",
+    "numpy>=2.0",
+    "scipy>=1.14",
+    "pillow>=10.0",
+    "markdown-it-py>=4.0",
+]
+
+[dependency-groups]
+dev = [
+    "fonttools>=4.68.0",
+]
+
+[tool.uv.workspace]
+members = ["manimations", "code"]
+
+[tool.uv.sources]
+cgviz = { workspace = true }
+manimations = { workspace = true }
+
+[tool.basedpyright]
+include = ["code", "manimations", "video"]
+reportMissingImports = "warning"

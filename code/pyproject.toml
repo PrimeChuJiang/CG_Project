@@ -1,0 +1,13 @@
+[project]
+name = "cgviz"
+version = "0.1.0"
+description = "计算机图形学算法核：向量、矩阵、变换、插值，可在 Manim 场景中直接调用"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12"]
+build-backend = "uv_build"

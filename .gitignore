@@ -1,0 +1,14 @@
+# 运行缓存与产物
+.venv/
+media/
+__pycache__/
+*.pyc
+.cache/
+
+# 抽帧检查用的临时图片
+output/videos/*_frames/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
